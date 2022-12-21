@@ -1,0 +1,10 @@
+<?php
+
+echo "THM RFI exercise\n";
+$output = null;
+$retval = null;
+exec('hostname', $output, $retval);
+echo "hostname command returned with status $retval and output:\n";
+print_r($output);
+
+?>
